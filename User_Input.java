@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main{
+class User_Input{
     public static void main(String[] args){
         System.out.println("Hello World");
         
