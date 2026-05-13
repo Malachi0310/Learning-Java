@@ -7,6 +7,7 @@ class Driver_earnings{
         trips[1] = new Trip("Denver Adams", "James Micheal", 3.0, 10.0);
         trips[2] = new Trip("Connor Tels", "Adam Watkins", 6, 10.0);        
         double total_earnings  = 0.0;
+        double highest_fare = 0.0;
         
         // Display details
         for(Trip trip: trips ){
@@ -15,10 +16,15 @@ class Driver_earnings{
             
             total_earnings += fare;
             
+            if (fare > highest_fare){
+                highest_fare = fare;
+            }
             
         }
+        System.out.println("\nDriver Summary:")
+        System.out.println("Total Earnings: " + total_earnings);
+        System.out.
         
-        System.out.println("\nTotal Earnings: " + total_earnings);
     }
 }
 
